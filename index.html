@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio Online!</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/burguer.png"
+      type="image/x-icon"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- javascript -->
+    <script src="/assets/js/bootstrap.min.js" defer></script>
+    <script src="/assets/js/jquery-1.12.4.min.js" defer></script>
+    <script src="/assets/js/modernizr-3.5.0.min.js" defer></script>
+    <script src="/assets/js/popper.min.js" defer></script>
+  </head>
+  <body>
+    <header class="head">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg pl-0 pr-0">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/imgs/logo.png"
+              alt="Logo do site"
+              width="160px"
+              class="img-logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler-icon">
+            <ul class="navbar-nav ml-auto mr-auto">
+              <li class="nav-item">
+                <a href="#reserva" class="nav-link">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a href="#servicos" class="nav-link">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a href="#cardapio" class="nav-link">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+              </li>
+            </ul>
+            <a class="btn btn-white btn-icon">
+              <span id="shopping-bag-text">Meu carrinho</span>
+              <span class="icon"><i class="fa fa-shopping-bag"></i></span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex text-banner">
+              <h1>Escolha sua comida <span>favorita.</span></h1>
+              <p>
+                Aproveite nosso cardápio! Escolha o que desejar e receba em sua
+                casa de forma rápida e segura
+              </p>
+              <div>
+                <a class="btn btn-yellow mt-4 mr-3">Ver cardápio</a>
+                <a href="#" class="btn btn-white btn-icon-left mt-4">
+                  <span class="icon-left">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                  (99) 99999-9999
+                </a>
+              </div>
+            </div>
+            <a class="btn btn-sm btn-white btn-social mt-4 mr-3" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="btn btn-sm btn-white btn-social mt-4 mr-3" href="#"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a class="btn btn-sm btn-white btn-social mt-4" href="#"
+              ><i class="fas fa-map-marker-alt"></i
+            ></a>
+          </div>
+
+          <div class="col-6">
+            <div class="card-banner"></div>
+            <div class="d-flex img-banner">
+              <img
+                src="./assets/imgs/burguer.png"
+                alt="Imagem de um Hambúrguer"
+              />
+            </div>
+            <div class="card card-case">
+              "Entrega rápida e funcionários simpáticos. <br />
+              A comida chegou quente e <br />
+              muito saborosa!"
+              <span class="card-case-name">
+                <strong>Thiago Lopes</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+      <div class="background-servicos"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <span class="hint-title">Serviços</span>
+            <h2 class="title">Como são nossos serviços?</h2>
+          </div>
+
+          <div class="col-4 mb-5">
+            <div class="card-icon text-center">
+              <img
+                src="./assets/imgs/icone-pedido.svg"
+                width="175px"
+                alt="Imagem de uma mulher fazendo um pedido no celular"
+              />
+            </div>
+            <div class="card-text text-center mt-3">
+              <p><strong>Fácil de pedir</strong></p>
+              <span
+                >Você só precisa de alguns passos para pedir sua comida</span
+              >
+            </div>
+          </div>
+
+          <div class="col-4 mb-5">
+            <div class="card-icon text-center">
+              <img
+                src="./assets/imgs/icone-delivery.svg"
+                width="250px"
+                alt="Imagem de uma mulher fazendo um pedido no celular"
+              />
+            </div>
+            <div class="card-text text-center mt-3">
+              <p><strong>Entrega rápida</strong></p>
+              <span>Nossa entrega é sempre pontual, rápida e segura.</span>
+            </div>
+          </div>
+
+          <div class="col-4 mb-5">
+            <div class="card-icon text-center">
+              <img
+                src="./assets/imgs/icone-qualidade.svg"
+                width="250px"
+                alt="Imagem de uma mulher fazendo um pedido no celular"
+              />
+            </div>
+            <div class="card-text text-center mt-3">
+              <p><strong>Melhor qualidade</strong></p>
+              <span>Nossa qualidade é o foco principal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <span class="hint-title">Cardápio</span>
+            <h2 class="title">Conheça o nosso cardápio</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoimentos" id="depoimentos"></section>
+    <section class="reserva" id="reserva"></section>
+    <footer></footer>
+  </body>
+</html>
